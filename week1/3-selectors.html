@@ -6,6 +6,56 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Selectors</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+    /* h1 {
+      color: red;
+    }
+    .global-footer p {
+      color: orangered;
+    }
+
+    .main-content > p {
+      color: orange;
+    }
+
+    h2 + p {
+      font-size: 2em;
+    }
+
+    p:not(:empty) {
+      background-color: aqua;
+    }
+
+    p:not(.fun-fact) {
+      background-color: aquamarine;
+    } */
+
+    li:nth-child(odd) {
+      color: greenyellow;
+    }
+
+    .main-content > p:nth-of-type(1) {
+      color: deeppink;
+    }
+    p, li {
+      font-style: italic;
+    }
+
+    h2 ~ blockquote {
+      background-color: brown;
+    }
+
+    [class*="global"] {
+      border: 1px solid red;
+    }
+    h2::before {
+      content: "🍋";
+      font-size: small;
+      color: limegreen
+    }
+
 
   </style>
 </head>
@@ -26,7 +76,8 @@
     <article class="main-content">
       <h2>Article Title</h2>
       <p><span>Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Magnam et expedita sunt quidem? Amet, dicta!</p>
-      <p>Facilis sit. Earum alias <strong>nemo omnis quibusdam</strong> maiores odio unde nobis perferendis quas molestias! Magni.</p>
+      <p></p>
+      <p class="fun-fact">Facilis sit. Earum alias <strong>nemo omnis quibusdam</strong> maiores odio unde nobis perferendis quas molestias! Magni.</p>
       <blockquote>
         <p>Nihil accusamus optio pariatur quasi sapiente neque hic? Consequatur id reprehenderit perspiciatis nesciunt accusamus tempore?</p>
       </blockquote>
@@ -39,6 +90,9 @@
         <li>Officiis optio reiciendis.</li>
       </ul>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, consequatur.</p>
+      <footer>
+        <p>Article Footer</p>
+      </footer>
     </article>
     <footer class="global-footer">
       <p>&copy; 2018 SVA HTML</p>
