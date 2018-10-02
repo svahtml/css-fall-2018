@@ -1,0 +1,50 @@
+body {
+  font: 30px arial;
+}
+
+.pixel {
+  font-size: 20px;
+  color: darkcyan;
+}
+
+.pixel h2 {
+  font-size: 100px;
+}
+
+.percent {
+  font-size: 200%;
+  color: darkorange;
+}
+
+.percent h2 {
+  font-size: 200%;
+}
+
+.em {
+  /* 1em === the current font size */
+  font-size: 3em;
+  color: brown;
+}
+
+.em h2 {
+  font-size: 2.5em;
+}
+
+.rem {
+  color: dodgerblue;
+  font-size: 2rem;
+}
+
+.rem h2 {
+  font-size: 2rem;
+}
+
+.vh {
+  background-color: lightblue;
+  height: 50vh;
+}
+
+.vw {
+  background-color: lightsalmon;
+  width: 40vw;
+}

@@ -1,23 +1,21 @@
 .name {
-  color: ;
+  color: darkcyan;
 }
 
 .rgb {
-  color: ;
+  color: rgb(255, 125, 12);
 }
 
 .hex {
-  color: ;
+  color: #c29a6f;
 }
 
-.hls {
-  color: ;
+.hsl {
+  color: hsl(70, 73%, 76%);
 }
 
 .rgba {
-  color: ;
-}
-
-.hlsa {
-  color: ;
+  color: rgba(255, 20, 147, .4);
+  /* background-color: green; */
+  text-shadow: 1px 1px 4px rgba(0,0,0,.5);
 }

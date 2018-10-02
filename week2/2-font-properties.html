@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Font Properties</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Font Properties</title>
 
-    <style>
+  <style>
 
-    .font-style {
-        font-style: italic;
-    }
+  .font-style {
+    font-style: italic;
+  }
 
-    .font-variant {
-        font-variant: small-caps;
-    }
+  .not-italic em {
+    font-style: normal;
+    font-weight: bold;
+  }
 
-    .font-weight {
-        font-weight: bold;
-    }
+  .font-variant {
+    font-variant: small-caps;
+  }
 
-    .font-size {
-        font-size: 12px;
-    }
+  .font-weight {
+    font-weight: bold;
+  }
 
-    .font-family {
-        font-family: "New Century Schoolbook", arial, times;
-    }
+  .font-size {
+    font-size: 12px;
+  }
 
-    .all {
+  .font-family {
+    font-family: "New Century Schoolbook", arial, times;
+  }
 
-    }
+  .all {
+    font: italic small-caps bold 22px arial;
+  }
 
-    .font {
+  .font {
+    font: 16px arial;
+  }
 
-    }
-
-    h1 {
-
-    }
-    </style>
+  h1 {
+    font-size: 32px;
+    font-family: times;
+  }
+  </style>
 
 </head>
 
@@ -52,6 +58,9 @@
 
   <article>
     <p class="font-style">font-style</p>
+
+    <!-- p.not-italic>lorem10 -->
+    <p class="not-italic">Lorem <em>ipsum dolor sit amet</em> consectetur adipisicing elit. Laudantium, asperiores!</p>
 
     <p class="font-variant">Font-Variant</p>
 
