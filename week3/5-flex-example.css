@@ -7,26 +7,49 @@ body {
 }
 
 .row {
-
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .item {
-
+  flex: 1 1 33%;
+  border: 1px solid lightgray;
+  padding: .5em;
+  border-radius: 10px;
+  margin-right: .5em;
+  display: flex;
+  flex-direction: column;
 }
 
+.item:last-child {
+  margin-right: 0;
+}
 
 h2 {
-
+  color: #4a3343;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin: 0 .5em .5em;
 }
 
 img {
-
+  display: block;
+  border-radius: 10px;
+  width: 100%;
 }
 
 p {
-
+  padding: 0 1em;
+  flex: 1;
 }
 
 .cta {
-
+  border: none;
+  padding: .5em;
+  background-color: #4a3343;
+  font-size: 1em;
+  color: #fff;
+  border-radius: 5px;
+  width: 100%;
 }
