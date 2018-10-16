@@ -1,18 +1,33 @@
 @import "week3-base.css";
 
-.wrapper {
-
+.wrapper::after {
+  content: "";
+  clear: both;
+  display: block;
 }
 
 .float {
+  border: 1px solid black;
+  margin: 0;
+  padding: .5em;
+  border-radius: 10px;
+}
 
+.float.right {
+  float: right;
+  margin-left: 1em;
+}
+
+.float.left {
+  float: left;
+  margin-right: 1em;
 }
 
 .float img {
-
+  display: block;
+  border-radius: 5px;
 }
 
-
 h2 {
-
+  clear: both;
 }
