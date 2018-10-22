@@ -6,13 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Flex Layout - 2 column</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    html, body {
+      min-height: 100%;
+    }
+
     body {
       font: 16px arial;
       background-color: #c0c0c0;
+      margin: 0;
     }
     main {
+      min-height: 100vh;
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
     }
     header {
       background-color: darkred;
@@ -22,24 +32,26 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      flex: 1 1 100%;
+    }
+    .row {
+      display: flex;
+      flex: 1;
     }
     nav {
       background-color: darkorange;
       /* width: 200px; */
-      flex: 0 0 200px;
+      flex: 0 0 30vw;
     }
     article {
       background-color: yellowgreen;
       /* width: 800px; */
+      /* min-height: 800px; */
       flex: 1;
-      height: 800px;
     }
     footer {
       background-color: darkgreen;
       color: #fff;
       height: 75px;
-      flex: 1 1 100%;
     }
   </style>
 </head>
@@ -47,8 +59,10 @@
 
 <main>
   <header>Header</header>
-  <nav>Navigation</nav>
-  <article>Content</article>
+  <section class="row">
+    <nav>Navigation</nav>
+    <article>Content</article>
+  </section>
   <footer>Footer</footer>
 </main>
 
