@@ -25,3 +25,49 @@ nav a:hover {
   color: lightseagreen;
   background-color: lightgray;
 }
+
+@media screen and (min-width: 768px) {
+  nav {
+    background-color: deeppink;
+  }
+}
+
+@media screen and (width: 768px) and (height: 1024px) {
+  nav {
+    background-color: orangered;
+  }
+  nav li {
+    flex: 1;
+  }
+  nav a {
+    padding: 2em 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  html, body {
+    height: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  nav li {
+    flex: 1;
+    font-size: 2rem;
+    border-bottom: 2px solid seagreen;
+    display: flex;
+  }
+  nav li:last-child {
+    border-bottom: none;
+  }
+  nav a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
