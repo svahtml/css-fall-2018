@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   min-height: 100%;
 }
@@ -21,10 +25,35 @@ body {
   padding: 1em;
   background-color: #233237;
   color: #fff;
+  display: flex;
 }
 
 .main-header h1 {
   margin: 0;
+  flex: 1;
+}
+
+.hamburger {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  flex: 0 0 47px;
+}
+
+@media screen and (min-width: 415px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.line {
+  height: 1px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+.line:last-child {
+  margin-bottom: 0;
 }
 
 .row {
@@ -97,4 +126,25 @@ body {
 
 .bottom-footer p {
   margin: 0;
+}
+
+@media screen and (width: 768px) and (height: 1024px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .side-bar {
+    flex: 1 1 100%;
+  }
+}
+
+@media screen and (max-width: 414px){
+  .row {
+    flex-direction: column;
+  }
+
+  .side-nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1s;
+  }
 }
