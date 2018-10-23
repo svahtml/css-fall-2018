@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Picture Element</title>
+  <style>
+    body {
+      background-color: #c0c0c0;
+    }
+    img {
+      max-width: 100%;
+    }
+  </style>
 </head>
 <body>
   <ul>
@@ -12,5 +20,11 @@
     <li>if the screen width is 465px or greate than the second image will display</li>
     <li>Any orther case the third image will display</li>
   </ul>
+  <picture>
+    <source media="(max-width: 500px)" srcset="images/small.jpg">
+    <source media="(max-width: 768px)" srcset="images/medium.jpg">
+    <img src="images/large.jpg" alt="">
+  </picture>
+
 </body>
 </html>
