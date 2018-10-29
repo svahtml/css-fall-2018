@@ -4,27 +4,46 @@ body {
 }
 
 .grid-layout {
-  background-color: #fff;
+  /* background-color: #fff; */
+  display: grid;
+  grid-template-columns: 200px 600px 150px;
+  grid-template-rows: 100px 75px 600px 60px;
+  justify-content: center;
 }
 
 header {
   background-color: darkred;
   color: white;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 nav {
   background-color: darkorange;
+  grid-column: 1 / 3;
 }
 
 article {
   background-color: yellowgreen;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
 }
 
 aside {
   background-color: darkgreen;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
 }
 
 footer {
   background-color: darkblue;
   color: #fff;
+  grid-column: 1 / -1;
+}
+
+.ad-space {
+  background-color: olivedrab;
+  color: white;
+  grid-column: -2 / -1;
+  grid-row: 1 / -2;
 }
