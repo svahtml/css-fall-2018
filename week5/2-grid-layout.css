@@ -1,0 +1,30 @@
+body {
+  font: 16px arial;
+  background-color: #c0c0c0;
+}
+
+.grid-layout {
+  background-color: #fff;
+}
+
+header {
+  background-color: darkred;
+  color: white;
+}
+
+nav {
+  background-color: darkorange;
+}
+
+article {
+  background-color: yellowgreen;
+}
+
+aside {
+  background-color: darkgreen;
+}
+
+footer {
+  background-color: darkblue;
+  color: #fff;
+}
