@@ -9,14 +9,32 @@ body {
 
 body {
   font: 16px arial;
+  margin: 0;
 }
 
 .promo {
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 100vh;
   border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px 1fr auto;
+  grid-gap: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .promo {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px repeat(2, 1fr) auto;
+  }
 }
 
 .promo h1 {
   margin: 0;
+  grid-column: 1 / -1;
+  align-self: center;
+  justify-self: center;
 }
 
 .promo .img {
@@ -36,4 +54,5 @@ body {
   border: 2px solid yellowgreen;
   background-color: yellowgreen;
   padding: 0.5em 1em;
+  grid-column: 1 / -1;
 }
