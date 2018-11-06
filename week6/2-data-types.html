@@ -17,6 +17,73 @@
   </ul>
 
   <script>
+    // create a variable
+    var isMale;
+    // assign the variable to true;
+    isMale = true;
+    // log the variable 
+    console.log(isMale);
+    // reasign the variable 
+    isMale = false;
+    console.log(isMale);
+
+    // create a let (lets can be reasigned)
+    let isHappy = true;
+    console.log(isHappy);
+    isHappy = false;
+    console.log(isHappy);
+
+    // create a const which can not be reasigned and throws an error.
+    const isHungry = false;
+    console.log(isHungry);
+    // isHungry = true;
+    // console.log(isHungry);
+
+    // null
+    var foo = null;
+    console.log(foo);
+
+    // undefined
+    var appleType;
+    console.log(appleType);
+    appleType = "Mac";
+    console.log(appleType);
+
+    // number
+    var a = 10;
+    var b = 20;
+    var total = a + b;
+    console.log(total);
+
+    console.log((10 + 20) / 2);
+
+    console.log(4 * 5);
+
+    var smallNumber = .93;
+
+    console.log(smallNumber);
+
+    var random = Math.random() * 10;
+    var round = Math.round(random);
+
+    console.log(round);
+
+    console.log(Math.PI);
+
+    // string
+    var first = "Dan";
+    var last = "Hahn";
+    var year = 2008;
+    var fullName = first + " " + last + " " + year;
+    console.log(fullName);
+
+    var fullName2 = `Hi class my name is ${first} ${last}.`;
+    console.log(fullName2);
+
+    var name = "Dan Hahn";
+    console.log(name.length);
+    console.log(name.charAt(2));
+    console.log(name.link('https://www.svahtml.com'));
 
   </script>
 </body>
