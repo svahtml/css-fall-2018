@@ -9,6 +9,30 @@
 <body>
   <h1>Arrays</h1>
   <script>
+    // var people = new Array();
+    // or 
+    var people = ["Dan", "Jim", "Sally"];
+
+    people.push("Amy");
+
+    var person = people[3];
+
+    console.log(people.length);
+    console.log(person);
+
+    // people.forEach(function(person) {
+    //   console.log(person);
+    // });
+
+    people.forEach(person => {
+      if(person.length === 3) {
+        console.log(person);
+      }
+    })
+
+    const fullNames = people.map(person => `${person} Smith`);
+
+    console.log(fullNames);
 
   </script>
 </body>
