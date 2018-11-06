@@ -10,7 +10,23 @@
   <h1>Objects</h1>
 
   <script>
+    var person = {
+      name: "Dan Hahn",
+      age: 25,
+      // social: ["@dan", "/dan", "%dan"],
+      profile: "/images/dan.png",
+      call() {
+        console.log("Call Mom Now!");
+      }
+    };
 
+    if(person.age === 25) {
+      person.email = "dan@dan.com"
+    }
+
+    console.table(person);
+
+    console.log(person.name);
   </script>
 </body>
 </html>
