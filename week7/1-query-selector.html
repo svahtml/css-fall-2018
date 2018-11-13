@@ -25,7 +25,30 @@
     </article>
   </div>
   <script>
-  
+    // getElementById(idname)
+    var title = document.getElementById('title');
+    // update title with `innerText`
+    title.innerText = "Update Title";
+    console.log(title);
+
+    // querySelector(css selector)
+    var header = document.querySelector('.wrapper > header');
+    console.log(header);
+
+    var p = document.querySelector('p:not(.intro)');
+    console.log(p);
+
+    // querySelectorAll()
+    var allLis = document.querySelectorAll('li');
+    console.log(allLis);
+    
+    // var review = (item) => {
+    //   console.log(item.textContent);
+    // }
+
+    allLis.forEach((item) => {
+      console.log(item.textContent)
+    });
   </script>
 </body>
 </html>

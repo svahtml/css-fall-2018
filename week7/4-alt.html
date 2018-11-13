@@ -26,6 +26,17 @@
         handle: '/svahtml'
       }
     ]
+
+    var socialItems = social.map((item) => {
+      return `<li><a href="http://www.${item.company}.com/${item.handle}">${item.handle}</a></li>`;
+    });
+
+    var ul = document.createElement('ul');
+    ul.innerHTML = socialItems.join("");
+    var body = document.querySelector('body');
+
+    body.appendChild(ul);
+
   </script>
 </body>
 </html>
