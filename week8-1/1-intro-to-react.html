@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Intro to ReactJs</title>
+  <script src="https://unpkg.com/react@16.3.1/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@16.3.1/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+  <style>
+    .container {
+      border: 1px solid black;
+      padding: 1em;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    // not used changed to babel
+    // <script type="text/javascript"> 
+    const root = document.getElementById('root');
+    // *** Vanalla JAVASCRIPT
+    // const element = document.createElement('div');
+    // element.textContent = "Hello World!";
+    // element.className = "container";
+    // root.appendChild(element);
+
+    // *** REACT CODE ***
+    // const element = React.createElement(
+    //   'div',
+    //   {
+    //     className: "container"
+    //   },
+    //   'Hello World!'
+    // );
+    // ReactDOM.render(element, root);
+
+    // *** JSX code ***
+    // const contnet = "Hello World!";
+    // const myClassName = "container";
+    // const element = <div className={myClassName}>{content}</div>
+
+    // *** JSX with props
+    // const props = {
+    //   className: "container",
+    //   children: <h1>Hello World</h1>
+    // }
+    // const element = <div {...props} />
+
+    // *** create Reuseable components ***
+    // const helloWorld = React.createElement('h1', null, 'Hello World');
+    // const helloWorld = <h1>Hello World!</h1>
+    // const element = (
+    //   <div className="container">
+    //     {helloWorld}
+    //     {helloWorld}
+    //   </div>
+    // )
+
+    // *** React with a function ***
+    // const Message = (props) => <h1>{props.msg}</h1>
+    // const element = (
+    //   <div className="container">
+    //     {React.createElement(Message, {msg: 'Hello World'})}
+    //     <Message msg="Good Night Moon!" />
+    //   </div>
+    // )
+
+    // *** React the good way ***
+    const Message = (props) => <h1>{props.children}</h1>
+    const element = (
+      <div className="container">
+        <Message>Hello World!</Message>
+        <Message>Good Night Moon!</Message>  
+      </div>
+    )
+
+    ReactDOM.render(element, root);
+  </script>
+</body>
+</html>
