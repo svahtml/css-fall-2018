@@ -1,0 +1,18 @@
+.Header {
+  border: 3px solid salmon;
+  background-color: darkcyan;
+  color: white;
+  padding: 1em;
+}
+
+.Header.small {
+  padding: .3em;
+}
+
+.Header.large {
+  padding: 2em;
+}
+
+.Header h1 {
+  margin: 0;
+}
